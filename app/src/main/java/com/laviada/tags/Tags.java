@@ -3,9 +3,9 @@ package com.laviada.tags;
 public class Tags {
 
     public static String base_url = "http://lavida.socialcafe.in/";
-    public static final String Product_IMAGE_URL= base_url+"public/images/product/";
-    public static final String Brand_IMAGE_URL= base_url+"public/images/brand/";
-    public static final String Category_IMAGE_URL= base_url+"public/images/category/";
+    public static final String Product_IMAGE_URL = base_url + "public/images/product/";
+    public static final String Brand_IMAGE_URL = base_url + "public/images/brand/";
+    public static final String Category_IMAGE_URL = base_url + "public/images/category/";
 
     public static final String session_login = "login";
     public static final String session_logout = "logout";
