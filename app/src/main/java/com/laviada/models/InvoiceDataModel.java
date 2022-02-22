@@ -30,6 +30,8 @@ public class InvoiceDataModel extends StatusResponse implements Serializable {
         return qr_code;
     }
 
+
+
     public class LimsSaleData implements Serializable {
         private int id;
         private int branch_id;
@@ -61,6 +63,7 @@ public class InvoiceDataModel extends StatusResponse implements Serializable {
         private String delivery_companies_id;
         private String created_at;
         private String updated_at;
+        private TableModel table;
 
         public int getId() {
             return id;
@@ -180,6 +183,9 @@ public class InvoiceDataModel extends StatusResponse implements Serializable {
 
         public String getUpdated_at() {
             return updated_at;
+        }
+        public TableModel getTable() {
+            return table;
         }
     }
 

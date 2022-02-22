@@ -8,7 +8,8 @@
         <variable
             name="lang"
             type="String" />
-        <import type="java.util.Locale"/>
+
+        <import type="java.util.Locale" />
 
         <variable
             name="model"
@@ -17,23 +18,6 @@
 
     </data>
 
-    <!--        <FrameLayout-->
-    <!--            android:layout_width="match_parent"-->
-    <!--            android:layout_height="match_parent"-->
-    <!--            tools:context=".ui.activity_web_view.WebViewActivity"-->
-
-    <!--            >-->
-    <!--            <WebView-->
-    <!--                android:id="@+id/webView"-->
-    <!--                android:layout_width="match_parent"-->
-    <!--                android:layout_height="match_parent"/>-->
-    <!--            <ProgressBar-->
-    <!--                android:id="@+id/progBar"-->
-    <!--                android:layout_width="wrap_content"-->
-    <!--                android:layout_height="wrap_content"-->
-    <!--                android:layout_gravity="center"-->
-    <!--                />-->
-    <!--        </FrameLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,38 +46,42 @@
                     android:src="@drawable/logo"
 
                     />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_gravity="center"
                     android:gravity="center"
-                    android:visibility="gone"
                     android:text="Simplified Tax Invoice"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_gravity="center"
                     android:gravity="center"
-                    android:visibility="gone"
                     android:text="فاتورة ضريبة مبسطة"
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginStart="5dp"
                     android:layout_marginEnd="5dp"
-                    android:layout_gravity="center"
                     android:gravity="center"
                     android:text="@{model.lims_warehouse_data.name}"
                     android:textColor="@color/black"
                     android:textSize="18sp" />
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
@@ -168,10 +156,10 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:visibility="gone"
                     android:text='@{@string/taxnum+"300942208200003"}'
                     android:textColor="@color/black"
-                    android:textSize="18sp" />
+                    android:textSize="18sp"
+                    android:visibility="gone" />
 
                 <View
                     android:layout_width="match_parent"
@@ -268,6 +256,7 @@
                         android:textColor="@color/black"
                         android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
@@ -296,6 +285,7 @@
                         android:textColor="@color/black"
                         android:textSize="18sp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="50dp"
@@ -325,71 +315,82 @@
                         android:textSize="18sp" />
                 </LinearLayout>
 
-<!--                <FrameLayout-->
-<!--                    android:id="@+id/fl"-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="0dp"-->
-<!--                    android:layout_weight="1"-->
-<!--                    android:layout_marginStart="16dp"-->
-<!--                    android:layout_marginTop="5dp"-->
-<!--                    android:layout_marginEnd="16dp"-->
-<!--                    android:background="@drawable/rounded_strock_gap"-->
-<!--                    android:padding="10dp">-->
-<!--<LinearLayout-->
-<!--    android:layout_width="match_parent"-->
-<!--    android:layout_height="wrap_content"-->
-<!--    android:orientation="vertical"-->
-<!--    >-->
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:orientation="horizontal">-->
+                <!--                <FrameLayout-->
+                <!--                    android:id="@+id/fl"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="0dp"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:layout_marginStart="16dp"-->
+                <!--                    android:layout_marginTop="5dp"-->
+                <!--                    android:layout_marginEnd="16dp"-->
+                <!--                    android:background="@drawable/rounded_strock_gap"-->
+                <!--                    android:padding="10dp">-->
+                <!--<LinearLayout-->
+                <!--    android:layout_width="match_parent"-->
+                <!--    android:layout_height="wrap_content"-->
+                <!--    android:orientation="vertical"-->
+                <!--    >-->
+                <!--    <LinearLayout-->
+                <!--        android:layout_width="match_parent"-->
+                <!--        android:layout_height="wrap_content"-->
+                <!--        android:orientation="horizontal">-->
 
-<!--        <TextView-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="2"-->
-<!--            android:gravity="center"-->
-<!--            android:text="@string/name2"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="18sp" />-->
+                <!--        <TextView-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_weight="2"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text="@string/name2"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="18sp" />-->
 
-<!--        <TextView-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:gravity="center"-->
-<!--            android:text="@string/amount"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="18sp" />-->
+                <!--        <TextView-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text="@string/amount"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="18sp" />-->
 
-<!--        <TextView-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_weight="1"-->
-<!--            android:gravity="center"-->
-<!--            android:text="@string/price2"-->
-<!--            android:textColor="@color/black"-->
-<!--            android:textSize="18sp" />-->
-<!--    </LinearLayout>-->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        />
+                <!--        <TextView-->
+                <!--            android:layout_width="0dp"-->
+                <!--            android:layout_height="wrap_content"-->
+                <!--            android:layout_weight="1"-->
+                <!--            android:gravity="center"-->
+                <!--            android:text="@string/price2"-->
+                <!--            android:textColor="@color/black"-->
+                <!--            android:textSize="18sp" />-->
+                <!--    </LinearLayout>-->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:padding="3dp"
+                    android:text='@{@string/table_name+model.lims_sale_data.table.name}'
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+
+                    />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
 
 
-<!--</LinearLayout>-->
+                <!--</LinearLayout>-->
 
-<!--                </FrameLayout>-->
+                <!--                </FrameLayout>-->
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:visibility="gone"
                     android:layout_marginEnd="16dp"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
 
                     <TextView
@@ -419,16 +420,16 @@
                     android:layout_height="1dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:visibility="gone"
-                    android:background="@color/color1" />
+                    android:background="@color/color1"
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:visibility="gone"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:visibility="gone">
 
 
                     <TextView
@@ -458,8 +459,8 @@
                     android:layout_height="1dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginEnd="16dp"
-                    android:visibility="gone"
-                    android:background="@color/color1" />
+                    android:background="@color/color1"
+                    android:visibility="gone" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -493,12 +494,11 @@
 
                 </LinearLayout>
 
-<ImageView
-    android:layout_width="200dp"
-    android:layout_height="200dp"
-    image="@{model.qr_code}"
-    android:layout_gravity="center"
-    />
+                <ImageView
+                    image="@{model.qr_code}"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center" />
 
             </LinearLayout>
         </androidx.core.widget.NestedScrollView>
