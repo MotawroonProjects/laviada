@@ -104,4 +104,6 @@
     <string name="order_detials">تفاصيل الطلب</string>
     <string name="change_table">تغيير الطاوله</string>
     <string name="tables">الطاولات</string>
+    <string name="table_name">اسم الطاوله : </string>
+
 </resources>

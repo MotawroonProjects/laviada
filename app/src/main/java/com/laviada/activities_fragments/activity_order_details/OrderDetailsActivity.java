@@ -127,6 +127,12 @@ public class OrderDetailsActivity extends AppCompatActivity {
                 createOrder();
             }
         });
+        binding.llBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
     }
 
     private void setData() {

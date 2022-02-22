@@ -66,6 +66,16 @@
 
                         />
                 </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="3dp"
+                    android:text='@{@string/table_name+model.table.name}'
+                    android:textColor="@color/gray17"
+                    android:textSize="16sp"
+
+                    />
 <!--                <LinearLayout-->
 <!--                    android:layout_width="match_parent"-->
 <!--                    android:layout_height="wrap_content"-->
